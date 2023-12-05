@@ -108,7 +108,6 @@ function recargarTabla() {
         "</td>" +
         '<td class="actions">' +
         '<i class="fa-solid fa-user-pen icons"></i>' +
-        '<i class="fa-solid fa-user icons"></i>' +
         '<i class="fa-solid fa-user-xmark icons"></i>' +
         "</td>";
       tbody.appendChild(tr);
@@ -154,23 +153,41 @@ function recargarTabla() {
       // Guarda el array de colaboradores modificado
       localStorage.setItem("colaboradores", JSON.stringify(colaboradores));
 
-
       // Actualiza la tabla
       recargarTabla();
     });
-
-    // Boton de Editar
-    var editButtons = document.querySelectorAll(".fa-user-edit");
-    editButtons.forEach(function(button) {
-      button.addEventListener("click", function() {
-        
-      })
-    });
   });
-
-  //
 }
 
 window.onload = function () {
   recargarTabla();
 };
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.getElementById('searchButton').addEventListener('click', function() {
+    var input = document.getElementById('searchInput').value.toLowerCase();
+    
+    // Recuperar los colaboradores
+    var colaboradores = JSON.parse(localStorage.getItem("colaboradores"));
+  
+    // Filtrar los colaboradores
+    var colaboradoresFiltrados = colaboradores.filter(function(colaborador) {
+      return colaborador.nombre.toLowerCase().includes(input);
+    });
+  
+    // Resaltar las filas que coinciden
+    var rows = document.querySelector("table tbody").getElementsByTagName('tr');
+    for (var i = 0; i < rows.length; i++) {
+      var nameCell = rows[i].getElementsByTagName('td')[1]; // Asume que el nombre está en la segunda celda
+      if (nameCell) {
+        var name = nameCell.textContent || nameCell.innerText;
+        if (colaboradoresFiltrados.find(function(c) { return c.nombre.toLowerCase() === name.toLowerCase(); })) {
+          rows[i].style.backgroundColor = 'yellow'; // Cambia esto al color que prefieras
+        } else {
+          rows[i].style.backgroundColor = ''; // Restablece el color de fondo
+        }
+      }
+    }
+  });
+});
+

@@ -1,9 +1,9 @@
-document.getElementById("toggle-map").addEventListener("click", function () {
-  var mapColumn = document.getElementById("map-column");
-  if (mapColumn.classList.contains("is-hidden-mobile")) {
-    mapColumn.classList.remove("is-hidden-mobile");
+document.getElementById('toggle-map').addEventListener('click', function() {
+  var mapa = document.getElementById('mapa');
+  if (mapa.style.display === 'none') {
+    mapa.style.display = 'block';
   } else {
-    mapColumn.classList.add("is-hidden-mobile");
+    mapa.style.display = 'none';
   }
 });
 
