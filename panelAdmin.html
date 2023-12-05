@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="icon" type="image/png" href="./img/favicon.ico" />
+    <title>Admin Panel</title>
+  </head>
+
+  <body>
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="panelAdmin.html"> Admin Panel </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="adminEventos.html"> Eventos </a>
+
+          <a class="navbar-item" href="adminColaboradores.html">
+            Colaboradores
+          </a>
+
+          <a class="navbar-item" href="adminVoluntarios.html"> Voluntarios </a>
+        </div>
+
+        <div class="navbar-end">
+          <a class="navbar-item" href="index.html"> Salir </a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <h1 class="title">Bienvenido al Panel de Administración</h1>
+      <p class="subtitle">Selecciona una base de datos:</p>
+
+      <div class="columns">
+        <div class="column">
+          <a class="button is-info is-fullwidth" href="adminEventos.html"
+            >Eventos</a
+          >
+        </div>
+        <div class="column">
+          <a class="button is-info is-fullwidth" href="adminColaboradores.html"
+            >Colaboradores</a
+          >
+        </div>
+        <div class="column">
+          <a class="button is-info is-fullwidth" href="adminVoluntarios.html"
+            >Voluntarios</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

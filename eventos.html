@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/eventos.css" />
+    <link rel="icon" type="image/png" href="./img/favicon.ico" />
+    <title>Eventos</title>
+  </head>
+  <body>
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a href="./index.html">
+          <img class="navbar-logo" src="./img/logo.png" width="52" />
+        </a>
+        <p class="navbar-item">BD de Colaboradores</p>
+        <a
+          role="button"
+          class="navbar-burger"
+          data-target="navMenu"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="./index.html"> Inicio </a>
+          <a class="navbar-item" href="./eventos.html"> Eventos </a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <figure class="imagen">
+              <a href="./panelAdmin.html">
+                <img class="imagen" src="./img/default.webp" />
+              </a>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="section is-small has-text-centered">
+        <div class="columns is-vcentered is-mobile">
+          <div class="column is-narrow">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="column">
+            <div
+              class="image-container"
+              style="background-image: url('./img/lagoas-belelle.jpg')"
+            >
+              <h1
+                class="title is-4 has-text-white"
+                style="position: absolute; top: 10px; left: 10px"
+              >
+                Recollida de Lixo
+              </h1>
+              <a href="contacto.html"
+                ><button
+                  class="button is-info"
+                  style="position: absolute; bottom: 10px; right: 10px"
+                >
+                  Participar
+                </button></a
+              >
+            </div>
+          </div>
+          <div class="column is-narrow">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </section>
+      <section class="section is-small">
+        <div class="columns is-multiline">
+          <div class="column is-full-mobile is-half-tablet is-half-desktop">
+            <h1 class="subtitle">Eventos Online</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ab
+              nesciunt odit ratione. Quidem consequatur quasi repellendus
+              perspiciatis assumenda nemo rem voluptas! Laborum cumque
+              laudantium ut cum temporibus qui at.
+            </p>
+          </div>
+          <div class="column is-full-mobile is-half-tablet is-half-desktop">
+            <h1 class="subtitle has-text-right-desktop">
+              Eventos Presenciales
+            </h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ab
+              nesciunt odit ratione. Quidem consequatur quasi repellendus
+              perspiciatis assumenda nemo rem voluptas! Laborum cumque
+              laudantium ut cum temporibus qui at.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="has-background-info">
+      <div class="redes-sociales">
+        <a href="https://www.facebook.com/proxectorios" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <p class="has-text-white copy">&copy Plan Proyecto Rios</p>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/28acf2ca7d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/eventos.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

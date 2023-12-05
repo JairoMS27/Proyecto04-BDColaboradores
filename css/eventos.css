@@ -1,0 +1,77 @@
+::-webkit-scrollbar {
+  width: 8px;
+  background: #b1b1b1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a90e2;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #2b2d30;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.image-container {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Ajusta esto a la altura que desees */
+}
+
+.imagen {
+  margin-top: 3px;
+  border-radius: 20px;
+}
+
+.image img {
+  transition: opacity 0.5s;
+}
+
+.image img.fade {
+  opacity: 0;
+}
+
+.image img {
+  width: 100%; /* La imagen ocupará todo el ancho de su contenedor */
+  max-width: 600px; /* Cambia esto al ancho máximo que desees */
+  height: auto; /* La altura se ajustará proporcionalmente */
+  max-height: 400px; /* Cambia esto a la altura máxima que desees */
+  object-fit: contain; /* Esto asegura que la imagen se ajuste completamente dentro del contenedor */
+  margin: auto; /* Esto centrará la imagen si es más pequeña que el contenedor */
+}
+
+.fa-arrow-right,
+.fa-arrow-left {
+  cursor: pointer;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.redes-sociales {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.redes-sociales a {
+  text-decoration: none;
+  color: white;
+}
+
+.copy {
+  text-align: center;
+}

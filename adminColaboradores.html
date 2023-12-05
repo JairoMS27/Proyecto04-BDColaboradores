@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="icon" type="image/png" href="./img/favicon.ico" />
+    <title>Colaboradores | Admin</title>
+  </head>
+  <body>
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="panelAdmin.html"> Admin Panel </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="adminEventos.html"> Eventos </a>
+
+          <a class="navbar-item" href="adminColaboradores.html">
+            Colaboradores
+          </a>
+
+          <a class="navbar-item" href="adminVoluntarios.html"> Voluntarios </a>
+        </div>
+
+        <div class="navbar-end">
+          <a class="navbar-item" href="index.html"> Salir </a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="modal" id="addModal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Añadir datos</p>
+            <button class="delete" aria-label="close" id="closeButton"></button>
+          </header>
+          <section class="modal-card-body">
+            <form id="addForm">
+              <div class="field">
+                <label class="label">Nombre</label>
+                <div class="control">
+                  <input id="nombre" class="input" type="text" placeholder="Nombre">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Teléfono</label>
+                <div class="control">
+                  <input id="telefono" class="input" type="tel" placeholder="Teléfono">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                  <input id="email" class="input" type="email" placeholder="Email">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Fecha de Incorporación</label>
+                <div class="control">
+                  <input id="fechaIncorporacion" class="input" type="date" placeholder="Fecha de Incorporación">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Tipo</label>
+                <div class="control">
+                  <div class="select">
+                    <select id="tipo">
+                      <option>Empresa</option>
+                      <option>Institución</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <footer class="modal-card-foot">
+                <button type="submit" class="button is-success">Guardar cambios</button>
+                <button type="button" class="button" id="cancelButton">Cancelar</button>
+              </footer>
+            </form>
+        </div>
+      </div>
+      <section class="section">
+        <h1 class="title">Colaboradores</h1>
+      </section>
+      <div class="level">
+        <div class="level-left">
+          <div class="field has-addons" style="margin: 10px">
+            <div class="control has-icons-left is-expanded">
+              <input
+                class="input is-rounded"
+                type="text"
+                placeholder="Buscar..."
+              />
+              <span class="icon is-small is-left">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+            <div class="control">
+              <a class="button is-info"> Buscar </a>
+            </div>
+          </div>
+        </div>
+        <div class="level-right">
+          <p class="control">
+            <button class="button is-info" style="margin: 10px">Añadir</button>
+          </p>
+        </div>
+      </div>
+      <table class="table is-striped is-fullwidth">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+            <th>Fecha de Incorporación</th>
+            <th>Tipo</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Se insertan con JS -->
+        </tbody>
+      </table>
+      <nav class="pagination is-centered" role="navigation" aria-label="pagination" style="margin-top: 10px;">
+        <ul class="pagination-list" style="margin-top: 10px;">
+          <!-- Los botones de paginación se insertan con JS -->
+        </ul>
+      </nav>
+      <div class="button-container">
+        <a href="./adminEventos.html">
+          <button class="cta" style="float: left">
+            <span>Eventos</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+        </a>
+        <a href="./adminVoluntarios.html">
+          <button class="cta" style="float: right">
+            <span>Voluntarios</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+        </a>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/28acf2ca7d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/modal.js"></script>
+    <script src="./scripts/colaboradores.js"></script>
+  </body>
+</html>

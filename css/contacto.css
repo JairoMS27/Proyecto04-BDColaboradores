@@ -1,0 +1,47 @@
+/* Sección de la barra de desplazamiento */
+/* Cambiar el radio de la esquina de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #b1b1b1;
+}
+
+/* Cambiar el radio de la esquina del pulgar de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background: #4a90e2;
+  border-radius: 10px;
+}
+
+/* Cambiar el color de fondo de la barra de desplazamiento cuando está activa */
+::-webkit-scrollbar-thumb:active {
+  background: #2b2d30;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.redes-sociales {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.redes-sociales a {
+  text-decoration: none;
+  color: white;
+}
+
+.copy {
+  text-align: center;
+}

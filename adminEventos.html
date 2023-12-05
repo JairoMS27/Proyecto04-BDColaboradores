@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="icon" type="image/png" href="./img/favicon.ico" />
+    <title>Eventos | Admin</title>
+  </head>
+  <body>
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="panelAdmin.html"> Admin Panel </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="adminEventos.html"> Eventos </a>
+
+          <a class="navbar-item" href="adminColaboradores.html">
+            Colaboradores
+          </a>
+
+          <a class="navbar-item" href="adminVoluntarios.html"> Voluntarios </a>
+        </div>
+
+        <div class="navbar-end">
+          <a class="navbar-item" href="index.html"> Salir </a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="section">
+        <h1 class="title">Eventos</h1>
+      </section>
+      <div class="level">
+        <div class="level-left">
+          <div class="field has-addons" style="margin: 10px">
+            <div class="control has-icons-left is-expanded">
+              <input
+                class="input is-rounded"
+                type="text"
+                placeholder="Buscar..."
+              />
+              <span class="icon is-small is-left">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+            <div class="control">
+              <a class="button is-info"> Buscar </a>
+            </div>
+          </div>
+        </div>
+        <div class="level-right">
+          <p class="control">
+            <button class="button is-info" style="margin: 10px">Añadir</button>
+          </p>
+        </div>
+      </div>
+      <table class="table is-striped is-fullwidth">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Fecha y Hora</th>
+            <th>Tipo</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Evento 1</td>
+            <td>2022-01-01 10:00</td>
+            <td>Presencial</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Evento 2</td>
+            <td>2022-01-02 14:30</td>
+            <td>Online</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Evento 3</td>
+            <td>2022-01-03 18:00</td>
+            <td>Presencial</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Evento 4</td>
+            <td>2022-01-04 09:30</td>
+            <td>Online</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Evento 5</td>
+            <td>2022-01-05 16:45</td>
+            <td>Presencial</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Evento 6</td>
+            <td>2022-01-06 11:15</td>
+            <td>Online</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Evento 7</td>
+            <td>2022-01-07 13:00</td>
+            <td>Presencial</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Evento 8</td>
+            <td>2022-01-08 17:30</td>
+            <td>Online</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Evento 9</td>
+            <td>2022-01-09 12:45</td>
+            <td>Presencial</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Evento 10</td>
+            <td>2022-01-10 15:20</td>
+            <td>Online</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="./adminColaboradores.html">
+        <button class="cta">
+          <span>Colaboradores</span>
+          <svg viewBox="0 0 13 10" height="10px" width="15px">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </button>
+      </a>
+    </main>
+    <script src="./scripts/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/28acf2ca7d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

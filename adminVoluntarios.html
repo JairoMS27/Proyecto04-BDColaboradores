@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="icon" type="image/png" href="./img/favicon.ico" />
+    <title>Voluntarios | Admin</title>
+  </head>
+  <body>
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="panelAdmin.html"> Admin Panel </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="adminEventos.html"> Eventos </a>
+
+          <a class="navbar-item" href="adminColaboradores.html">
+            Colaboradores
+          </a>
+
+          <a class="navbar-item" href="adminVoluntarios.html"> Voluntarios </a>
+        </div>
+
+        <div class="navbar-end">
+          <a class="navbar-item" href="index.html"> Salir </a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="section">
+        <h1 class="title">Voluntarios</h1>
+      </section>
+      <div class="level">
+        <div class="level-left">
+          <div class="field has-addons" style="margin: 10px">
+            <div class="control has-icons-left is-expanded">
+              <input
+                class="input is-rounded"
+                type="text"
+                placeholder="Buscar..."
+              />
+              <span class="icon is-small is-left">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+            <div class="control">
+              <a class="button is-info"> Buscar </a>
+            </div>
+          </div>
+        </div>
+        <div class="level-right">
+          <p class="control">
+            <button class="button is-info" style="margin: 10px">Añadir</button>
+          </p>
+        </div>
+      </div>
+      <table class="table is-striped is-fullwidth">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>DNI</th>
+            <th>Ubicación</th>
+            <th>Correo</th>
+            <th>Teléfono</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Voluntario 1</td>
+            <td>123456789</td>
+            <td>Ubicación 1</td>
+            <td>Voluntario1@example.com</td>
+            <td>123456789</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Voluntario 2</td>
+            <td>987654321</td>
+            <td>Ubicación 2</td>
+            <td>Voluntario2@example.com</td>
+            <td>987654321</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Voluntario 3</td>
+            <td>555555555</td>
+            <td>Ubicación 3</td>
+            <td>Voluntario3@example.com</td>
+            <td>555555555</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Voluntario 4</td>
+            <td>111111111</td>
+            <td>Ubicación 4</td>
+            <td>Voluntario4@example.com</td>
+            <td>111111111</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Voluntario 5</td>
+            <td>999999999</td>
+            <td>Ubicación 5</td>
+            <td>Voluntario5@example.com</td>
+            <td>999999999</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Voluntario 6</td>
+            <td>777777777</td>
+            <td>Ubicación 6</td>
+            <td>Voluntario6@example.com</td>
+            <td>777777777</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Voluntario 7</td>
+            <td>444444444</td>
+            <td>Ubicación 7</td>
+            <td>Voluntario7@example.com</td>
+            <td>444444444</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Voluntario 8</td>
+            <td>222222222</td>
+            <td>Ubicación 8</td>
+            <td>Voluntario8@example.com</td>
+            <td>222222222</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Voluntario 9</td>
+            <td>888888888</td>
+            <td>Ubicación 9</td>
+            <td>Voluntario9@example.com</td>
+            <td>888888888</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Voluntario 10</td>
+            <td>666666666</td>
+            <td>Ubicación 10</td>
+            <td>Voluntario10@example.com</td>
+            <td>666666666</td>
+            <td class="actions">
+              <i class="fa-solid fa-user-pen"></i>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user-xmark"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="button-container">
+        <a href="./adminColaboradores.html">
+          <button class="cta" style="float: left">
+            <span>Colaboradores</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+        </a>
+        <a href="./adminEventos.html">
+          <button class="cta" style="float: right">
+            <span>Eventos</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+        </a>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/28acf2ca7d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
