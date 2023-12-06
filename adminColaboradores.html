@@ -98,6 +98,58 @@
             </form>
         </div>
       </div>
+      <div id="editModal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Editar Colaborador</p>
+            <button class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <form id="editForm">
+              <div class="field">
+                <label class="label" for="editNombre">Nombre</label>
+                <div class="control">
+                  <input class="input" type="text" id="editNombre" name="nombre">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label" for="editTelefono">Teléfono</label>
+                <div class="control">
+                  <input class="input" type="tel" id="editTelefono" name="telefono">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label" for="editEmail">Email</label>
+                <div class="control">
+                  <input class="input" type="email" id="editEmail" name="email">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label" for="editFechaIncorporacion">Fecha de Incorporación</label>
+                <div class="control">
+                  <input class="input" type="date" id="editFechaIncorporacion" name="fechaIncorporacion">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label" for="editTipo">Tipo</label>
+                <div class="control">
+                  <div class="select">
+                    <select id="editTipo">
+                      <option>Empresa</option>
+                      <option>Institución</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button is-success" type="submit" form="editForm">Guardar cambios</button>
+            <button class="button">Cancelar</button>
+          </footer>
+        </div>
+      </div>
       <section class="section">
         <h1 class="title">Colaboradores</h1>
       </section>
